@@ -3,35 +3,61 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.title{
+  font-size: 8vh;
 }
 
-.description a {
+.midContent{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  min-height: 40vh;
+  width: 100%;
+  /* padding: 2rem; */
 }
 
-.description p {
-  position: relative;
-  margin: 0;
+.description{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.langIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: 38%;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+}
+
+.socialIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  padding: 1rem;
+}
+
+.iconLg{
+  font-size: 3rem;
+}
+
+.paddingTop{
+  padding-top: 1rem;
+}
+
+.copyRight{
+  font-size: small;
 }
 
 .code {
@@ -72,15 +98,25 @@
   max-width: 30ch;
 }
 
-.center {
+.centerRow {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
   padding: 4rem 0;
 }
 
-.center::before {
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+}
+
+/* .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
@@ -102,7 +138,7 @@
   position: absolute;
   filter: blur(45px);
   transform: translateZ(0);
-}
+} */
 
 .logo,
 .thirteen {
@@ -207,11 +243,11 @@
     font-size: 0.8rem;
   }
 
-  .description a {
+  /* .description a {
     padding: 1rem;
-  }
+  } */
 
-  .description p,
+  /* .description p,
   .description div {
     display: flex;
     justify-content: center;
@@ -247,7 +283,7 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
-  }
+  } */
 }
 
 /* Tablet and Smaller Desktop */
